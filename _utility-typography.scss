@@ -1,14 +1,13 @@
 
 // Converted Variables
 
-$bold-font-weight: bold !default;
 
 // Custom Media Query Variables
 
 
 /* Basscss Utility Typography */
 
-.bold    { font-weight: $bold-font-weight }
+.bold    { font-weight: $bold-font-weight /* Fallback value:  bold */ }
 .regular { font-weight: normal }
 .italic  { font-style: italic }
 .caps    { text-transform: uppercase; letter-spacing: .2em; }
