@@ -1,6 +1,6 @@
 # basscss-sass
 
-Transpile Basscss Sass partials
+Transpiled Basscss Sass partials
 
 http://basscss.com
 
