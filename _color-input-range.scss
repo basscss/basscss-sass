@@ -52,16 +52,6 @@ $darken-4: rgba(0,0,0,.5) !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
 $border-color: $darken-2 !default;
-$body-color: $black !default;
-$body-background-color: $white !default;
-$link-color: $blue !default;
-$link-text-decoration: none !default;
-$link-hover-text-decoration: underline !default;
-$pre-background-color: transparent !default;
-$pre-border-radius: $border-radius !default;
-$rule-border-style: solid !default;
-$rule-border-width: $border-width !default;
-$rule-border-color: $border-color !default;
 
 // Custom Media Query Variables
 
@@ -69,32 +59,51 @@ $breakpoint-sm: '(min-width: 40em)' !default;
 $breakpoint-md: '(min-width: 52em)' !default;
 $breakpoint-lg: '(min-width: 64em)' !default;
 
-/* Basscss Color Base */
+/* Basscss Color Input Range */
 
-body {
-  color: $body-color;
-  background-color: $body-background-color;
+.range-light {
+  color: inherit;
+  background-color: transparent;
+  -webkit-appearance: none;
 }
 
-a {
-  color: $link-color;
-  text-decoration: $link-text-decoration;
+.range-light::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: $border-radius;
+  background-color: currentcolor;
 }
 
-a:hover {
-  text-decoration: $link-hover-text-decoration;
+.range-light::-moz-range-thumb {
+  border-radius: $border-radius;
+  border-color: transparent;
+  border-width: 0;
+  background-color: currentcolor;
 }
 
-pre, code {
-  background-color: $pre-background-color;
-  border-radius: $pre-border-radius;
+.range-light::-webkit-slider-runnable-track {
+  border-radius: $border-radius;
+  background-color: $darken-3;
 }
 
-hr {
+.range-light::-moz-range-track {
+  border-radius: $border-radius;
+  background-color: $darken-3;
+}
+
+.range-light:focus {
+  outline: none;
+}
+
+.range-light:focus::-webkit-slider-thumb {
+  outline: none;
   border: 0;
-  border-bottom-style: $rule-border-style;
-  border-bottom-width: $rule-border-width;
-  border-bottom-color: $rule-border-color;
+  box-shadow: 0 0 1px 2px currentcolor;
+}
+
+.range-light:focus::-moz-range-thumb {
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 0 3px $darken-3;
 }
 
 /* Basscss Defaults */

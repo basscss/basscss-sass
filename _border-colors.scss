@@ -52,16 +52,6 @@ $darken-4: rgba(0,0,0,.5) !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
 $border-color: $darken-2 !default;
-$body-color: $black !default;
-$body-background-color: $white !default;
-$link-color: $blue !default;
-$link-text-decoration: none !default;
-$link-hover-text-decoration: underline !default;
-$pre-background-color: transparent !default;
-$pre-border-radius: $border-radius !default;
-$rule-border-style: solid !default;
-$rule-border-width: $border-width !default;
-$rule-border-color: $border-color !default;
 
 // Custom Media Query Variables
 
@@ -69,33 +59,32 @@ $breakpoint-sm: '(min-width: 40em)' !default;
 $breakpoint-md: '(min-width: 52em)' !default;
 $breakpoint-lg: '(min-width: 64em)' !default;
 
-/* Basscss Color Base */
+/* Basscss Border Colors */
 
-body {
-  color: $body-color;
-  background-color: $body-background-color;
-}
+.border-black  { border-color: $black }
+.border-gray   { border-color: $gray }
+.border-silver { border-color: $silver }
+.border-white  { border-color: $white }
 
-a {
-  color: $link-color;
-  text-decoration: $link-text-decoration;
-}
+.border-aqua  { border-color: $aqua }
+.border-blue  { border-color: $blue }
+.border-navy  { border-color: $navy }
+.border-teal  { border-color: $teal }
+.border-green { border-color: $green }
+.border-olive { border-color: $olive }
+.border-lime  { border-color: $lime }
 
-a:hover {
-  text-decoration: $link-hover-text-decoration;
-}
+.border-yellow  { border-color: $yellow }
+.border-orange  { border-color: $orange }
+.border-red     { border-color: $red }
+.border-fuchsia { border-color: $fuchsia }
+.border-purple  { border-color: $purple }
+.border-maroon  { border-color: $maroon }
 
-pre, code {
-  background-color: $pre-background-color;
-  border-radius: $pre-border-radius;
-}
-
-hr {
-  border: 0;
-  border-bottom-style: $rule-border-style;
-  border-bottom-width: $rule-border-width;
-  border-bottom-color: $rule-border-color;
-}
+.border-darken-1 { border-color: $darken-1 }
+.border-darken-2 { border-color: $darken-2 }
+.border-darken-3 { border-color: $darken-3 }
+.border-darken-4 { border-color: $darken-4 }
 
 /* Basscss Defaults */
 

@@ -68,12 +68,6 @@ $breakpoint-lg: '(min-width: 64em)' !default;
   background-color: transparent;
   border-radius: $border-radius;
   border: $border-width solid currentcolor;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow, background-color;
-          transition-property: box-shadow, background-color;
 }
 
 .button-outline:before {
@@ -88,12 +82,6 @@ $breakpoint-lg: '(min-width: 64em)' !default;
   border: $border-width solid transparent;
   background-color: currentcolor;
   border-radius: $border-radius;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
   opacity: 0;
 }
 

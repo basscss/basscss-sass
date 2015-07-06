@@ -52,16 +52,6 @@ $darken-4: rgba(0,0,0,.5) !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
 $border-color: $darken-2 !default;
-$body-color: $black !default;
-$body-background-color: $white !default;
-$link-color: $blue !default;
-$link-text-decoration: none !default;
-$link-hover-text-decoration: underline !default;
-$pre-background-color: transparent !default;
-$pre-border-radius: $border-radius !default;
-$rule-border-style: solid !default;
-$rule-border-width: $border-width !default;
-$rule-border-color: $border-color !default;
 
 // Custom Media Query Variables
 
@@ -69,33 +59,28 @@ $breakpoint-sm: '(min-width: 40em)' !default;
 $breakpoint-md: '(min-width: 52em)' !default;
 $breakpoint-lg: '(min-width: 64em)' !default;
 
-/* Basscss Color Base */
+/* Basscss Color Progress */
 
-body {
-  color: $body-color;
-  background-color: $body-background-color;
-}
-
-a {
-  color: $link-color;
-  text-decoration: $link-text-decoration;
-}
-
-a:hover {
-  text-decoration: $link-hover-text-decoration;
-}
-
-pre, code {
-  background-color: $pre-background-color;
-  border-radius: $pre-border-radius;
-}
-
-hr {
+.progress {
+  background-color: $darken-2;
   border: 0;
-  border-bottom-style: $rule-border-style;
-  border-bottom-width: $rule-border-width;
-  border-bottom-color: $rule-border-color;
+  border-radius: 10000px;
 }
+
+.progress::-webkit-progress-bar {
+  -webkit-appearance: none;
+  background-color: $darken-2
+}
+
+.progress::-webkit-progress-value {
+  -webkit-appearance: none;
+  background-color: currentColor;
+}
+
+.progress::-moz-progress-bar {
+  background-color: currentColor;
+}
+
 
 /* Basscss Defaults */
 

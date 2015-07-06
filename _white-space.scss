@@ -97,6 +97,8 @@ $breakpoint-lg: '(min-width: 64em)' !default;
 .mxn4 { margin-left: -$space-4; margin-right: -$space-4; }
 
 .mx-auto { margin-left: auto; margin-right: auto; }
+.p0 { padding: 0 }
+
 .p1  { padding:       $space-1 }
 .py1 { padding-top:   $space-1; padding-bottom: $space-1 }
 .px1 { padding-left:  $space-1; padding-right:  $space-1 }

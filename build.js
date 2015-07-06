@@ -4,11 +4,11 @@ var fs = require('fs');
 var path = require('path');
 var cssscss = require('css-scss');
 var cssnext = require('cssnext');
-var basscssPkg = require('basscss/package.json');
+var basscss = require('basscss');
 
-var modules = basscssPkg.basscss.variables;
-modules = modules.concat(basscssPkg.basscss.modules);
-modules = modules.concat(basscssPkg.basscss.optional_modules);
+var modules = basscss.variables;
+modules = modules.concat(basscss.modules);
+modules = modules.concat(basscss.optional_modules);
 
 var cssnextOpts = {
   features: {
