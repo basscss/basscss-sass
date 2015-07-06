@@ -10,6 +10,8 @@
 .inline       { display: inline }
 .block        { display: block }
 .inline-block { display: inline-block }
+.table        { display: table }
+.table-cell   { display: table-cell }
 
 .overflow-hidden { overflow: hidden }
 .overflow-scroll { overflow: scroll }
@@ -27,5 +29,4 @@
 
 .fit { max-width: 100% }
 
-.half-width { width: 50% }
-.full-width { width: 100% }
+.border-box { box-sizing: border-box }

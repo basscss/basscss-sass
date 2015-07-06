@@ -91,6 +91,8 @@ $breakpoint-lg: '(min-width: 64em)' !default;
   border-left-color: $border-color;
 }
 
+.border-none { border: 0 }
+
 .rounded { border-radius: $border-radius }
 .circle  { border-radius: 50% }
 

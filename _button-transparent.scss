@@ -68,12 +68,6 @@ $breakpoint-lg: '(min-width: 64em)' !default;
   background-color: transparent;
   border-radius: 0;
   border: $border-width solid transparent;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: box-shadow;
-          transition-property: box-shadow;
 }
 
 .button-transparent:before {
@@ -87,12 +81,6 @@ $breakpoint-lg: '(min-width: 64em)' !default;
   left: -$border-width;
   border: $border-width solid transparent;
   background-color: currentcolor;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
   opacity: 0;
 }
 

@@ -52,6 +52,7 @@ $darken-4: rgba(0,0,0,.5) !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
 $border-color: $darken-2 !default;
+$button-font-family: inherit !default;
 $button-font-size: inherit !default;
 $button-font-weight: $bold-font-weight /* Fallback value:  bold */ !default;
 $button-line-height: 1.125rem !default;
@@ -68,12 +69,12 @@ $breakpoint-lg: '(min-width: 64em)' !default;
 
 button,
 .button {
+  font-family: $button-font-family;
   font-size: $button-font-size;
   font-weight: $button-font-weight;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
-  box-sizing: border-box;
   line-height: $button-line-height;
   padding: $button-padding-y $button-padding-x;
   margin: 0;
@@ -83,10 +84,13 @@ button,
   -webkit-appearance: none;
 }
 
+button,
 button:after,
 button:before,
+.button,
 .button:after,
 .button:before {
+  box-sizing: border-box;
   box-sizing: border-box;
 }
 

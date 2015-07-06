@@ -74,25 +74,20 @@ $breakpoint-lg: '(min-width: 64em)' !default;
 
 .flex-justify  { -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between }
 
-.flex-first { -webkit-box-ordinal-group: 0; -webkit-order: -1; -ms-flex-order: -1; order: -1 }
-.flex-last  { -webkit-box-ordinal-group: 1025; -webkit-order: 1024; -ms-flex-order: 1024; order: 1024 }
-
 .flex-auto { -webkit-box-flex: 1; -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto }
 .flex-grow { -webkit-box-flex: 1; -webkit-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 0 auto }
 .flex-none { -webkit-box-flex: 0; -webkit-flex: none; -ms-flex: none; flex: none }
 
-.flex > div { box-sizing: border-box }
+.flex-first { -webkit-box-ordinal-group: 0; -webkit-order: -1; -ms-flex-order: -1; order: -1 }
+.flex-last  { -webkit-box-ordinal-group: 100000; -webkit-order: 99999; -ms-flex-order: 99999; order: 99999 }
 @media #{$breakpoint-sm} {
   .sm-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
-  .sm-flex > div { box-sizing: border-box }
 }
 @media #{$breakpoint-md} {
   .md-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
-  .md-flex > div { box-sizing: border-box }
 }
 @media #{$breakpoint-lg} {
   .lg-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
-  .lg-flex > div { box-sizing: border-box }
 }
 
 

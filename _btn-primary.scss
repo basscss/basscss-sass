@@ -52,16 +52,8 @@ $darken-4: rgba(0,0,0,.5) !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
 $border-color: $darken-2 !default;
-$body-color: $black !default;
-$body-background-color: $white !default;
-$link-color: $blue !default;
-$link-text-decoration: none !default;
-$link-hover-text-decoration: underline !default;
-$pre-background-color: transparent !default;
-$pre-border-radius: $border-radius !default;
-$rule-border-style: solid !default;
-$rule-border-width: $border-width !default;
-$rule-border-color: $border-color !default;
+$button-color: $white !default;
+$button-background-color: $blue !default;
 
 // Custom Media Query Variables
 
@@ -69,32 +61,27 @@ $breakpoint-sm: '(min-width: 40em)' !default;
 $breakpoint-md: '(min-width: 52em)' !default;
 $breakpoint-lg: '(min-width: 64em)' !default;
 
-/* Basscss Color Base */
+/* Basscss Btn Primary */
 
-body {
-  color: $body-color;
-  background-color: $body-background-color;
+.btn-primary {
+  color: $button-color;
+  background-color: $button-background-color;
+  border-radius: $border-radius;
 }
 
-a {
-  color: $link-color;
-  text-decoration: $link-text-decoration;
+.btn-primary:hover {
+  box-shadow: inset 0 0 0 20rem $darken-1;
 }
 
-a:hover {
-  text-decoration: $link-hover-text-decoration;
+.btn-primary:active {
+  box-shadow: inset 0 0 0 20rem $darken-2,
+    inset 0 3px 4px 0 $darken-3,
+    0 0 1px $darken-2;
 }
 
-pre, code {
-  background-color: $pre-background-color;
-  border-radius: $pre-border-radius;
-}
-
-hr {
-  border: 0;
-  border-bottom-style: $rule-border-style;
-  border-bottom-width: $rule-border-width;
-  border-bottom-color: $rule-border-color;
+.btn-primary:disabled,
+.btn-primary.is-disabled {
+  opacity: .5;
 }
 
 /* Basscss Defaults */

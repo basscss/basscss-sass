@@ -52,6 +52,11 @@ $darken-4: rgba(0,0,0,.5) !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
 $border-color: $darken-2 !default;
+$form-field-font-family: inherit !default;
+$form-field-font-size: 1rem !default;
+$form-field-height: 2.25rem !default;
+$form-field-padding-y: .5rem !default;
+$form-field-padding-x: .5rem !default;
 
 // Custom Media Query Variables
 
@@ -65,12 +70,19 @@ input,
 select,
 textarea,
 fieldset {
+  font-family: $form-field-font-family;
   font-size: $form-field-font-size;
+  box-sizing: border-box;
   margin-top: 0;
   margin-bottom: 0;
 }
 
+label {
+  vertical-align: middle;
+}
+
 input[type=text],
+input[type=date],
 input[type=datetime],
 input[type=datetime-local],
 input[type=email],
@@ -82,7 +94,6 @@ input[type=tel],
 input[type=time],
 input[type=url],
 input[type=week] {
-  box-sizing: border-box;
   height: $form-field-height;
   padding: $form-field-padding-y $form-field-padding-x;
   vertical-align: middle;
@@ -90,7 +101,6 @@ input[type=week] {
 }
 
 select {
-  box-sizing: border-box;
   line-height: 1.75;
   padding: $form-field-padding-y $form-field-padding-x;
 }
@@ -101,19 +111,8 @@ select:not([multiple]) {
 }
 
 textarea {
-  box-sizing: border-box;
   line-height: 1.75;
   padding: $form-field-padding-y $form-field-padding-x;
-}
-
-.fieldset-reset {
-  padding: 0;
-  margin-left: 0;
-  margin-right: 0;
-  border: 0;
-}
-.fieldset-reset legend {
-  padding: 0;
 }
 
 /* Basscss Defaults */
