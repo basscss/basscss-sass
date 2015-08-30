@@ -49,6 +49,10 @@ $darken-1: rgba(0,0,0,.0625) !default;
 $darken-2: rgba(0,0,0,.125) !default;
 $darken-3: rgba(0,0,0,.25) !default;
 $darken-4: rgba(0,0,0,.5) !default;
+$lighten-1: rgba(255,255,255,.0625) !default;
+$lighten-2: rgba(255,255,255,.125) !default;
+$lighten-3: rgba(255,255,255,.25) !default;
+$lighten-4: rgba(255,255,255,.5) !default;
 $border-width: 1px !default;
 $border-radius: 3px !default;
 $border-color: $darken-2 !default;
@@ -85,6 +89,11 @@ $breakpoint-lg: '(min-width: 64em)' !default;
 .border-darken-2 { border-color: $darken-2 }
 .border-darken-3 { border-color: $darken-3 }
 .border-darken-4 { border-color: $darken-4 }
+
+.border-lighten-1 { border-color: $lighten-1 }
+.border-lighten-2 { border-color: $lighten-2 }
+.border-lighten-3 { border-color: $lighten-3 }
+.border-lighten-4 { border-color: $lighten-4 }
 
 /* Basscss Defaults */
 
