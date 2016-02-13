@@ -16,10 +16,9 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
-    "basscss": "^7.0.4"
+    "basscss": "^8.0.0-beta5"
   },
   "devDependencies": {
-    "basscss": "^8.0.0-beta5",
     "css-scss": "^1.0.0-beta1",
     "mocha": "^2.4.5",
     "node-sass": "^3.4.2",

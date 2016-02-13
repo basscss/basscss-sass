@@ -5,7 +5,7 @@
     "Brent Jackson <jacksonblack@gmail.com>"
   ],
   "description": "Transpiled Basscss Sass partials",
-  "main": "basscss.scss",
+  "main": "scss/basscss.scss",
   "keywords": [
     "basscss",
     "css",
