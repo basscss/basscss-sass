@@ -16,10 +16,12 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
-    "basscss": "^8.0.0-beta5"
+    "basscss": "^8.0.0",
+    "basscss-addons": "^1.0.0-beta2"
   },
   "devDependencies": {
-    "css-scss": "^1.0.0-beta1",
+    "colors.css": "^2.3.0",
+    "css-scss": "^0.1.0",
     "mocha": "^2.4.5",
     "node-sass": "^3.4.2",
     "postcss": "^5.0.15",
