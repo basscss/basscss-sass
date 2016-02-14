@@ -1,6 +1,6 @@
 {
   "name": "basscss-sass",
-  "version": "4.0.0-beta1",
+  "version": "4.0.0",
   "description": "Transpiled Basscss Sass partials",
   "scripts": {
     "start": "node build",
