@@ -41,5 +41,5 @@ See <CONTRIBUTING.md> for more.
 
 ---
 
-MIT License
+[MIT License](LICENSE.md)
 
