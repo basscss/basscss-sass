@@ -56,13 +56,16 @@ function buildPartial (m) {
     })
 }
 
+function writeIndexFile(modulesToImport, fileName) {
+  var fileContents = modulesToImport.map(function (m) {
+    return '@import "' + m.replace(/^basscss\-/,'') + '";'
+  })
+
+  fs.writeFileSync(path.join('scss', fileName), fileContents.join('\n'))
+}
+
 modules.forEach(buildPartial)
 addons.forEach(buildPartial)
 
-// Build index
-var index = modules.map(function (m) {
-  return '@import "' + m.replace(/^basscss\-/,'') + '";'
-})
-
-fs.writeFileSync(path.join('scss', 'basscss.scss'), index.join('\n'))
-
+writeIndexFile(modules, 'basscss.scss')
+writeIndexFile(addons, 'basscss-addons.scss')
