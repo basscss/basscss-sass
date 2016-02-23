@@ -41,6 +41,8 @@ var addons = [
   'basscss-addons/modules/responsive-padding'
 ]
 
+var modulePrefixRegex = /^basscss\-addons\/modules\/|^basscss\-/
+
 // Build partials
 
 function buildPartial (m) {
@@ -49,7 +51,7 @@ function buildPartial (m) {
   postcss([ postcssImport ])
     .process(css).then(function (result) {
       var scss = cssScss(result.css)
-      var shortname = m.replace(/^basscss\-addons\/modules\/|^basscss\-/, '')
+      var shortname = m.replace(modulePrefixRegex, '')
       var filename = '_' + shortname + '.scss'
 
       fs.writeFileSync(path.join('scss', filename), scss)
@@ -58,7 +60,7 @@ function buildPartial (m) {
 
 function writeIndexFile(modulesToImport, fileName) {
   var fileContents = modulesToImport.map(function (m) {
-    return '@import "' + m.replace(/^basscss\-/,'') + '";'
+    return '@import "' + m.replace(modulePrefixRegex,'') + '";'
   })
 
   fs.writeFileSync(path.join('scss', fileName), fileContents.join('\n'))
