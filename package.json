@@ -1,6 +1,6 @@
 {
   "name": "basscss-sass",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Transpiled Basscss Sass partials",
   "scripts": {
     "start": "node build",
@@ -17,16 +17,16 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
-    "basscss": "^8.0.0",
+    "basscss": "^8.0.10",
     "basscss-addons": "^1.0.0-beta2"
   },
   "devDependencies": {
     "colors.css": "^2.3.0",
-    "css-scss": "^0.1.0",
-    "mocha": "^2.4.5",
-    "node-sass": "^3.4.2",
-    "postcss": "^5.0.15",
-    "postcss-import": "^8.0.2"
+    "css-scss": "^0.1.1",
+    "mocha": "^6.0.2",
+    "node-sass": "^3.13.1",
+    "postcss": "^5.2.17",
+    "postcss-import": "^8.2.0"
   },
   "main": "build.js",
   "directories": {
