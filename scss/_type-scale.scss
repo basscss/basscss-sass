@@ -1,6 +1,8 @@
 
 // Converted Variables
 
+$h00: 4rem !default;
+$h0: 3rem !default;
 $h1: 2rem !default;
 $h2: 1.5rem !default;
 $h3: 1.25rem !default;
@@ -12,6 +14,10 @@ $h6: .75rem !default;
 
 
 /* Basscss Type Scale */
+
+.h00 { font-size: $h00 }
+
+.h0 { font-size: $h0 }
 
 .h1 { font-size: $h1 }
 

@@ -81,16 +81,24 @@ $space-4: 4rem !default;
 
 .my4 { margin-top:    $space-4; margin-bottom: $space-4 }
 
-.mxn1 { margin-left: -$space-1; margin-right: -$space-1; }
+.mxn1 { margin-left: ($space-1 * -1); margin-right: ($space-1 * -1); }
 
-.mxn2 { margin-left: -$space-2; margin-right: -$space-2; }
+.mxn2 { margin-left: ($space-2 * -1); margin-right: ($space-2 * -1); }
 
-.mxn3 { margin-left: -$space-3; margin-right: -$space-3; }
+.mxn3 { margin-left: ($space-3 * -1); margin-right: ($space-3 * -1); }
 
-.mxn4 { margin-left: -$space-4; margin-right: -$space-4; }
+.mxn4 { margin-left: ($space-4 * -1); margin-right: ($space-4 * -1); }
 
-.ml-auto { margin-left: auto }
+.m-auto  { margin: auto; }
+
+.mt-auto { margin-top: auto }
 
 .mr-auto { margin-right: auto }
 
+.mb-auto { margin-bottom: auto }
+
+.ml-auto { margin-left: auto }
+
 .mx-auto { margin-left: auto; margin-right: auto; }
+
+.my-auto { margin-top: auto; margin-bottom: auto; }
